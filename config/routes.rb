@@ -6,5 +6,7 @@ Rails.application.routes.draw do
 
     resources :post_comments, only: [:create, :destroy]
   end
+  # 以下の行のonly: []内にeditを追加
+  resources :users, only: [:show, :edit, :update]
 
 end
